@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="DockerSuite" parallel="tests" thread-count="3">
+
+    <test name = "4DockerTests">
+        <parameter name="browser" value="chrome"></parameter>
+
+        <classes>
+            <class name="TestRelativeLocators">
+
+            </class>
+        </classes>
+    </test>
+    <parameter name="browser" value="firefox"></parameter>
+
+<test name = "GetLocationTestViaFireFox">
+
+    <classes>
+    <class name="GetLocationTest">
+
+    </class>
+
+</classes>
+</test>
+
+    <test name = "MultipleWindowsTest">
+        <parameter name="browser" value="chrome"></parameter>
+
+        <classes>
+            <class name="MultipleWindowsTest">
+
+            </class>
+        </classes>
+
+</test>
+</suite>
